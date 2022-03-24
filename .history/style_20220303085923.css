@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Quicksand", sans-serif;
+  --secondary-font: "Pacifico", cursive;
+  --third-font: "Poppins", sans-serif;
+  --primary-color: #ff6600;
+  --title-color: #232121;
+  --white-color: #fff;
+  --text-color: #161c2db3;
+  --price-color: #ffc600;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: inline-block;
+  border: none;
+
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+body {
+  color: var(--title-color);
+
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 1.2rem 4.5rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--white-color);
+
+  color: var(--white-color);
+  background-color: transparent;
+
+  font-family: var(--third-font);
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: bold;
+
+  transition: 0.4s linear;
+}
+
+.btn i {
+  display: inline-block;
+  margin-left: 0.5rem;
+
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+/* header section starts */
+#dark {
+  display: none;
+}
+
+.header {
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(./image/banner1.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 70vh;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.header__logo {
+  color: var(--white-color);
+
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+
+.navbar__search {
+  position: relative;
+}
+
+.navbar__search input {
+  padding: 1rem 5rem 1rem 2rem;
+
+  border-radius: 0.5rem;
+
+  color: var(--text-color);
+}
+
+.navbar__search label {
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+
+  transform: translate(50%, -50%);
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mode__container,
+#menu-button {
+  color: var(--white-color);
+
+  cursor: pointer;
+}
+
+.mode__container {
+  font-size: 2.4rem;
+}
+
+#menu-button {
+  font-size: 3.1rem;
+}
+
+.header__content {
+  max-width: 60rem;
+  margin-top: 10rem;
+
+  color: var(--white-color);
+}
+
+.header__content h2 {
+  font-size: 5.4rem;
+
+  text-transform: capitalize;
+}
+
+.header__content p {
+  margin: 2.4rem 0 4.8rem;
+
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.navbar__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 40rem;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+
+  background-color: rgb(6 3 0 / 77%);
+
+  transition: transform 0.3s, opacity 0.9s, visibility 0s 0.4s;
+}
+
+.navbar__list.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.navbar__list a {
+  margin: 1.5rem 0;
+
+  color: var(--white-color);
+
+  text-transform: capitalize;
+  font-family: var(--third-font);
+  font-size: 2rem;
+  font-weight: 600;
+
+  transition: 0.2s linear;
+}
+
+.navbar__list a:hover {
+  color: var(--primary-color);
+}
+
+#close-button {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  z-index: 25;
+
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+
+  color: var(--white-color);
+  background-color: var(--primary-color);
+
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+}
+
+/* header section ends */
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    background-position: center;
+
+    min-height: 50vh;
+  }
+}

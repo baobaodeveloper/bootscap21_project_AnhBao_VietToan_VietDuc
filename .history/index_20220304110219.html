@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontawesome link cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Diner</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__top">
+          <a class="header__logo" href="#">Diner</a>
+
+          <div class="header__navbar">
+            <form class="navbar__search">
+              <input type="search" placeholder="Search here..." id="search" />
+              <label for="search" class="fas fa-search"></label>
+            </form>
+
+            <div class="mode__container">
+              <i class="fas fa-sun" id="dark"></i>
+              <i class="fas fa-moon" id="light"></i>
+            </div>
+
+            <div class="fa fa-bars" id="menu-button"></div>
+          </div>
+
+          <nav class="navbar__list">
+            <i class="fas fa-times" id="close-button"></i>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">blogs</a>
+            <a href="#">404</a>
+            <a href="#">landing page</a>
+            <a href="#">contact</a>
+            <a href="#">shot codes</a>
+            <a href="#">email</a>
+          </nav>
+        </div>
+
+        <div class="header__content">
+          <h2>the only thing we love more than food is you!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.Ea ipsum sed consequuntur illum facere.
+          </p>
+          <a href="#" class="btn"
+            >read more <i class="fas fa-angle-right"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about container pad-med">
+      <div class="heading">
+        <span>about us</span>
+        <h3>We found our creative space that is open for you.</h3>
+      </div>
+
+      <div class="text">
+        <p>
+          Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+          in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non
+          quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+          dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init
+          dolor sit.
+        </p>
+
+        <p>
+          Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+          in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non
+          quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </section>
+
+    <section class="restaurant">
+      <div class="restaurant__img">
+        <img src="./image/banner3.jpg" alt="#" />
+      </div>
+
+      <div class="restaurant__content">
+        <div class="heading">
+          <span>more than 3000 restaurant</span>
+          <h3>Book a table easly at the best price</h3>
+        </div>
+
+        <div class="text">
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales
+            quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et
+            libero ut justo ultrices in.
+          </p>
+        </div>
+
+        <div class="restaurant__best">
+          <div class="best__item">
+            <i class="fas fa-thumbs-up"></i>
+            <h4>best deals</h4>
+            <p class="text">
+              Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+            </p>
+          </div>
+
+          <div class="best__item">
+            <i class="fas fa-utensils"></i>
+            <h4>best food</h4>
+            <p class="text">
+              Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories-wrapper">
+      <div class="categories container pad-med">
+        <div class="heading text-align pad-med">
+          <span>what's new</span>
+          <h3>popular categories</h3>
+        </div>
+
+        <div class="categories__list">
+          <div class="categories__item">
+            <div class="categories__img">
+              <img src="./image/g1.jpg" alt="" />
+            </div>
+            <div class="categories__info">
+              <span class="categories__name"> vegetarian </span>
+              <span class="categories__price"> $350 </span>
+            </div>
+          </div>
+
+          <div class="categories__item">
+            <div class="categories__img">
+              <img src="./image/g2.jpg" alt="" />
+            </div>
+            <div class="categories__info">
+              <span class="categories__name"> drinks </span>
+              <span class="categories__price"> $550 </span>
+            </div>
+          </div>
+
+          <div class="categories__item">
+            <div class="categories__img">
+              <img src="./image/g3.jpg" alt="" />
+            </div>
+            <div class="categories__info">
+              <span class="categories__name"> lunch </span>
+              <span class="categories__price"> $650 </span>
+            </div>
+          </div>
+
+          <div class="categories__item">
+            <div class="categories__img">
+              <img src="./image/g4.jpg" alt="" />
+            </div>
+            <div class="categories__info">
+              <span class="categories__name"> bakery </span>
+              <span class="categories__price"> $550 </span>
+            </div>
+          </div>
+
+          <div class="categories__item">
+            <div class="categories__img">
+              <img src="./image/g5.jpg" alt="" />
+            </div>
+            <div class="categories__info">
+              <span class="categories__name"> desserts </span>
+              <span class="categories__price"> $750 </span>
+            </div>
+          </div>
+
+          <div class="categories__item">
+            <div class="categories__img">
+              <img src="./image/g6.jpg" alt="" />
+            </div>
+            <div class="categories__info">
+              <span class="categories__name"> pizza </span>
+              <span class="categories__price"> $850 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu container pad-med">
+      <div class="menu_list pad-med">
+        <div class="menu__item">
+          <div class="menu__header">
+            <i class="fas fa-users"></i>
+            <div class="menu__info">
+              <span class="menu__number">01</span>
+              <span class="menu__name">soup</span>
+            </div>
+          </div>
+
+          <p class="menu__content">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.
+          </p>
+        </div>
+
+        <div class="menu__item">
+          <div class="menu__header">
+            <i class="fas fa-shield-alt"></i>
+            <div class="menu__info">
+              <span class="menu__number">02</span>
+              <span class="menu__name">drinks</span>
+            </div>
+          </div>
+
+          <p class="menu__content">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.
+          </p>
+        </div>
+
+        <div class="menu__item">
+          <div class="menu__header">
+            <i class="fas fa-thermometer-full"></i>
+            <div class="menu__info">
+              <span class="menu__number">03</span>
+              <span class="menu__name">pizza</span>
+            </div>
+          </div>
+
+          <p class="menu__content">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.
+          </p>
+        </div>
+
+        <div class="menu__item">
+          <div class="menu__header">
+            <i class="fas fa-american-sign-language-interpreting"></i>
+            <div class="menu__info">
+              <span class="menu__number">04</span>
+              <span class="menu__name">breakfast</span>
+            </div>
+          </div>
+
+          <p class="menu__content">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.
+          </p>
+        </div>
+
+        <div class="menu__item">
+          <div class="menu__header">
+            <i class="fas fa-paint-brush"></i>
+            <div class="menu__info">
+              <span class="menu__number">05</span>
+              <span class="menu__name">lunch</span>
+            </div>
+          </div>
+
+          <p class="menu__content">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.
+          </p>
+        </div>
+
+        <div class="menu__item">
+          <div class="menu__header">
+            <i class="fas fa-eraser"></i>
+            <div class="menu__info">
+              <span class="menu__number">06</span>
+              <span class="menu__name">diner</span>
+            </div>
+          </div>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="delicious">
+      <div class="delicious-wrapper container">
+        <h3>Deliciousness jumping into the mouth.</h3>
+
+        <div class="delicious__btn">
+          <a href="#" class="btn"
+            >read more <i class="fas fa-angle-right"></i
+          ></a>
+          <a href="#" class="btn active"
+            >contact us <i class="fas fa-angle-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="count container">
+      <div class="count-item">
+        <i class="far fa-building"></i>
+        <span class="count__number">15,100</span>
+        <span class="count__name">branches</span>
+      </div>
+
+      <div class="count-item">
+        <i class="fas fa-utensils"></i>
+        <span class="count__number">19,256</span>
+        <span class="count__name">food items</span>
+      </div>
+
+      <div class="count-item">
+        <i class="fas fa-users"></i>
+        <span class="count__number" id="runner">12,100</span>
+        <span class="count__name">chefs</span>
+      </div>
+
+      <div class="count-item">
+        <i class="far fa-smile"></i>
+        <span class="count__number">2,560</span>
+        <span class="count__name">happy customers</span>
+      </div>
+    </div>
+
+    <section class="video">
+      <div class="video-wrapper container">
+        <div class="video__img">
+          <img src="./image/banner3.jpg" alt="#" />
+
+          <div class="play-btn">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs-wrapper">
+      <div class="blogs container pad-med">
+        <div class="heading text-align">
+          <span>latest posts</span>
+          <h3>blog post</h3>
+        </div>
+
+        <div class="blogs__list">
+          <div class="blogs__item">
+            <div class="blogs__img">
+              <img src="./image/banner1.jpg" alt="" />
+
+              <div class="food__info">
+                <span class="food__name">reciepe</span>
+                <span class="food__time">
+                  <i class="far fa-clock"></i>
+                  <span>10 min cook</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="blogs__content">
+              <h4>the best cookie recipes to bake this weekend</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                vitae sit.
+              </p>
+
+              <div class="blog__footer">
+                <div class="blog__customer">
+                  <img src="./image/team1.jpg" alt="" />
+                  <span>rashed kabir</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".count__number").counterUp({
+          delay: 10,
+          time: 10000,
+        });
+      });
+    </script>
+  </body>
+</html>
